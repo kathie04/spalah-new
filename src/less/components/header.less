@@ -1,0 +1,42 @@
+.hook-component() {
+    .header {
+        padding-top: 14px;
+        .layout-header {
+            justify-content: space-between;   
+            align-items: center; 
+        }
+        &-nav {
+            a {
+                display: inline-block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        &-arrow {
+            color: #000;
+            margin-right: 30px;
+            svg {
+                width: 24px;
+            }
+            &:hover {
+                color: lighten(#000, 50%);
+            }
+        }
+        &-user {
+            display: flex;
+            align-items: center;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            p {
+                margin: 0;
+                font-size: 0.7rem;
+                margin-left: 10px;
+            }
+        }
+        @media screen and (min-width: 376px) {
+            display: none;
+        }
+    }
+}

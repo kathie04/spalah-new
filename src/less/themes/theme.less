@@ -1,0 +1,256 @@
+@global-font-family:                            'Gotham Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+@global-font-size:                              1rem;
+@global-line-height:                            1.5;
+
+@global-color:                                  #222127;
+@global-muted-color:                            #999;
+
+@global-link-color:                             #017eff;
+@global-link-hover-color:                       darken(#017eff, 20%);
+
+@global-inverse-color:                          #fff;
+
+@global-background:                             #fff;
+
+@global-muted-background:                       #f4f4f4;
+@global-primary-background:                     #8f65af;
+@global-secondary-background:                   #2d2c32;
+
+@global-success-background:                     #12a348;
+@global-warning-background:                     #f55e41;
+@global-danger-background:                      #f55e41;
+
+@global-border-width:                           1px;
+@global-border:                                 #dadada;
+
+@global-margin:                                 35px;
+
+@global-gutter:                                 30px;
+
+@global-control-height:                         56px;
+
+@base-body-background:                          @global-background;
+@base-body-font-family:                         @global-font-family;
+@base-body-font-weight:                         normal;
+@base-body-font-size:                           @global-font-size;
+@base-body-line-height:                         @global-line-height;
+@base-body-color:                               @global-color;
+
+@base-link-color:                               @global-link-color;
+@base-link-text-decoration:                     none;
+@base-link-hover-color:                         @global-link-hover-color;
+@base-link-hover-text-decoration:               underline;
+
+@base-strong-font-weight:                       bolder;
+@base-code-font-size:                           @global-font-size;
+@base-code-font-family:                         Consolas, monaco, monospace;
+@base-code-color:                               #f0506e;
+@base-em-color:                                 #f0506e;
+@base-ins-background:                           #ffd;
+@base-ins-color:                                @global-color;
+@base-mark-background:                          #ffd;
+@base-mark-color:                               @global-color;
+@base-quote-font-style:                         italic;
+@base-small-font-size:                          80%;
+
+@base-margin-vertical:                          @global-margin;
+
+@base-heading-font-family:                      @global-font-family;
+@base-heading-font-weight:                      bold;
+@base-heading-color:                            inherit;
+@base-heading-text-transform:                   none;
+@base-heading-margin-top:                       @global-margin;
+@base-h1-font-size:                             3.75rem;
+@base-h1-line-height:                           1.2;
+@base-h2-font-size:                             2.25rem;
+@base-h2-line-height:                           2;
+@base-h3-font-size:                             1.5rem;
+@base-h3-line-height:                           1.5;
+@base-h4-font-size:                             1rem;
+@base-h4-line-height:                           1.5;
+@base-h5-font-size:                             0.7rem;
+@base-h5-line-height:                           1.4;
+@base-h6-font-size:                             0.875rem;
+@base-h6-line-height:                           1.4;
+
+@base-list-padding-left:                        30px;
+
+@base-hr-margin-vertical:                       @global-margin;
+@base-hr-border:                                @global-border-width solid @global-border;
+
+@base-blockquote-color:                         #333;
+@base-blockquote-font-size:                     @global-font-size;
+@base-blockquote-line-height:                   1.5;
+@base-blockquote-font-style:                    italic;
+@base-blockquote-margin-vertical:               @global-margin;
+@base-blockquote-footer-color:                  #333;
+@base-blockquote-footer-margin-top:             @global-margin;
+@base-blockquote-footer-font-size:              @global-font-size;
+@base-blockquote-footer-line-height:            1.5;
+
+@base-pre-font-size:                            @global-font-size;
+@base-pre-line-height:                          1.5;
+@base-pre-font-family:                          @base-code-font-family;
+@base-pre-color:                                @global-color;
+
+@base-selection-background:                     #39f;
+@base-selection-color:                          @global-inverse-color;
+
+@button-color: #fff;
+@button-background: @global-success-background;
+@button-font-family: inherit;
+@button-font-size: @global-font-size;
+@button-font-weight: bold;
+@button-padding: 6px 40px;
+@button-height: @global-control-height;
+
+@button-color-hover: @button-color;
+@button-background-hover: spin(desaturate(darken(@button-background, 8%), 5%), 1);
+
+@button-color-focus: @button-color;
+@button-background-focus: @button-background-hover;
+
+@button-color-active: @button-color;
+@button-background-active: desaturate(darken(@button-background, 13%), 5%);
+
+@form-height:                                   @global-control-height;
+@form-line-height:                              1.4;
+@form-padding:                                  15px 24px;
+
+@form-background:                               #f5f5f5;
+@form-color:                                    #000;
+
+@form-focus-background:                         @form-background;
+@form-focus-color:                              @form-color;
+
+@form-disabled-background:                      @form-background;
+@form-disabled-color:                           @form-color;
+
+@form-placeholder-color:                        @form-color;
+
+@form-invalid-color:                            @form-color;
+@form-valid-color:                              @form-color;
+
+@form-select-padding-right:                     20px;
+@form-select-option-color:                      #444;
+
+@form-radio-size:                               16px;
+@form-radio-margin-top:                         -4px;
+@form-radio-background:                         #f5f5f5;
+
+@form-radio-checked-background:                 #ececec;
+
+@form-radio-checked-focus-background:           #ececec;
+
+@form-radio-disabled-background:                #ececec;
+
+@form-legend-font-size:                         @global-font-size;
+@form-legend-line-height:                       1.4;
+
+@form-control-margin-bottom:                    @global-margin;
+
+@form-icon-width:                               @form-height;
+@form-icon-font-size:                           @global-font-size;
+@form-icon-color:                               @global-muted-color;
+@form-icon-hover-color:                         @global-color;
+
+@form-range-thumb-height:                       15px;
+@form-range-thumb-border-radius:                500px;
+@form-range-thumb-background:                   @global-color;
+
+@form-range-track-height:                       3px;
+@form-range-track-background:                   @global-muted-background;
+@form-range-track-focus-background:             @global-muted-background;
+
+@internal-form-select-image:                    url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="black"><path d="M12 1l-3 5h6z"></path><path d="M12 13l-3-5h6z"></path></svg>');
+@internal-form-radio-image:                     url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="black"><path d="M10 8c0 1.105-0.895 2-2 2s-2-0.895-2-2c0-1.105 0.895-2 2-2s2 0.895 2 2z"></path></svg>');
+@internal-form-checkbox-image:                  url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" stroke="black"><path fill="none" stroke="inherit" stroke-width="1.8824" stroke-miterlimit="50" stroke-linecap="butt" stroke-linejoin="miter" d="M20.028 2.353l-12.028 12.028-6.381-6.381"></path></svg>');
+@internal-form-checkbox-indeterminate-image:    url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="black"><path d="M3 8h10v1h-10v-1z"></path></svg>');
+
+@table-color:                                   @global-color;
+@table-background:                              @global-background;
+
+@table-margin-vertical:                         @global-margin;
+
+@table-cell-padding:                            16px;
+
+@table-divider-border-width:                    @global-border-width;
+@table-divider-border:                          @global-border-width solid @global-border;
+
+@table-expand-min-width:                        150px;
+
+body {
+    font-size: 16px;
+}
+
+.hook-form() {
+	& {border-bottom: @global-border-width solid @global-border;}
+
+	&:hover {
+		background-color: #ebebeb;
+	}
+}
+
+.hook-form-placeholder() {
+	opacity: 0.5;
+	}
+
+.hook-form-focus() {
+	border-bottom-color: #017eff;
+	&::placeholder {
+		color: @global-link-color;
+		opacity: 1;
+		margin-bottom: 10px;
+	}
+}
+
+.hook-form-disabled() {
+	&::placeholder {
+		opacity: 0.1;
+	}
+}
+
+.hook-form-invalid() {
+	border-bottom-color: @global-warning-background;
+	&::placeholder {
+		color:@global-warning-background;
+		opacity: 1;
+	}
+}
+
+.hook-form-valid() {
+	border-bottom-color: #000;
+	&::placeholder {
+		opacity: 1;
+	}
+}
+
+.hook-button {
+	width: 100%;
+	font-weight: bold;
+}
+
+.hook-button-misc() {
+	.button-block {position: relative;}
+    .button-shadow {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 90%;
+		height: @global-control-height;
+		box-shadow: 0 10px 30px rgba(18, 163, 72, 0.5);
+		z-index: -1;
+	}
+}
+
+.hook-component() {
+	.inverse {
+		background-color: #000;
+		color: #fff;
+		svg {color: #fff;
+		}
+		a {color: #fff}
+		h1, h2, h3, h4, h5, h6 {color: #fff}
+	}
+}

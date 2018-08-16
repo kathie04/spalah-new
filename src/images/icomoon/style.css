@@ -1,0 +1,44 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-layers {
+  width: 1.1669921875em;
+}
+
+.icon-Path_74 {
+  width: 1.5em;
+}
+
+.icon-Path_109 {
+  width: 1.0556640625em;
+}
+
+.icon-Path_116 {
+  width: 1.5em;
+}
+
+.icon-Path_118 {
+  width: 1.5em;
+}
+
+.icon-Path_120 {
+  width: 0.7998046875em;
+}
+
+.icon-Path_149 {
+  width: 0.7998046875em;
+}

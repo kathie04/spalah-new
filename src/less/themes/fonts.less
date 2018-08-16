@@ -1,0 +1,15 @@
+.font-face(@family, @filename: @family, @weight, @style){
+	@font-face{
+	  font-family: @family;
+	  src:url('../fonts/GothamPro/@{filename}.eot');
+	  src:url('../fonts/GothamPro/@{filename}.eot?#iefix') format('embedded-opentype'),
+		  url('../fonts/GothamPro/@{filename}.woff') format('woff'),
+		  url('../fonts/GothamPro/@{filename}.ttf') format('truetype');
+	  font-weight: @weight;
+	  font-style: @style;
+	}
+  }
+
+.font-face(Gotham Pro, GothamPro-Bold, bold, normal);
+.font-face(Gotham Pro, GothamPro-Light, 300, normal);
+.font-face(Gotham Pro, GothamPro, normal, normal);

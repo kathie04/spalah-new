@@ -1,0 +1,75 @@
+.hook-component() {
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      &-title {
+        height: 64px;
+        width: 100%/6;
+        order: -2; 
+        background-color: @global-success-background;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &:not(:last-child) {
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+       
+        svg {
+            font-size: 22px;
+            fill: #fff;
+            opacity: 0.5;
+        }
+      }
+      &-text {
+        border-top: 1px solid var(--global-muted-background);
+        display: none;
+        width: 100%;
+        flex-grow: 2;
+        margin: 0;
+        padding: 45px 0;
+        line-height: 1.43;
+        video {
+          width: 100%;
+        }
+      }
+
+      &-tab:checked+&-title {
+            svg {
+                opacity: 1;
+            }
+            &:after {
+                bottom: 0;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-bottom-color: #fff;
+                border-width: 10px;
+            }
+        }
+
+      &-tab:checked+&-title h6 {
+        color: #fff;
+        }
+
+      &-tab:checked+&-title+&-text {display: flex;}
+      &-title:hover {
+        svg {
+            opacity: 1;}
+      }
+    }
+
+    input[class="tabs-tab"] {
+      display: none;
+    }
+}

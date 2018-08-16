@@ -1,0 +1,29 @@
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  .hook-container();
+}
+
+.container .container {
+  padding-left: 0;
+  padding-right: 0
+}
+
+.container-expand {
+  max-width: none
+}
+
+.hook-container-misc();
+
+//=========== Hooks
+
+.hook-container() {
+  &-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.hook-container-misc() {}
