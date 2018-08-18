@@ -9,31 +9,31 @@ body
   div(class='wrapper')
     include components/header/header
     main(class='main')
-      div(class='layout layout-main')
-        div(class='layout-item')
-          include components/sidebar/sidebar
-        div(class='layout-item')
-          section(class='section-lesson')
-            div(class='heading-lesson')
-              div(class='container-mobile')
-                h3 Урок 2. Тестирование
-            div(class="progress-lesson")
-              div(class='container-mobile')
-                div(class='progress')
-                  p Прогресс прохождения урока:
-                  p(class='user-progress') 37%
-                div(class='points')
-                  p Баллов набранно:
-                  div(class='points-calc')
-                    span(class='user-progress') 56 
-                    span из 159
-                div(class='tasks')
-                  p Пройденно заданий:
-                  div(class='tasks-calc')
-                    span(class='user-progress') 8 
-                    span из 24
-            div(class='lesson-content')
-            include components/tabs/tabs
+      section(class='section-education')
+        div(class='layout layout-education')
+          div(class='layout-item')
+            include components/sidebar/sidebar
+          div(class='layout-item')
+            section(class='section-lesson')
+              div(class='heading-lesson')
+                div(class='container-mobile')
+                  h3 Урок 2. Тестирование
+              div(class="progress-lesson")
+                div(class='container-mobile')
+                  div(class='progress')
+                    p Прогресс прохождения урока:
+                    p(class='user-progress') 37%
+                  div(class='points')
+                    p Баллов набранно:
+                    div(class='points-calc')
+                      span(class='user-progress') 56 
+                      span из 159
+                  div(class='tasks')
+                    p Пройденно заданий:
+                    div(class='tasks-calc')
+                      span(class='user-progress') 8 
+                      span из 24
+              include components/tabs/tabs
                   
     include components/footer/footer
 

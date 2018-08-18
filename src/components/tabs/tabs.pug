@@ -6,17 +6,7 @@ div(class='tabs')
   div(class="tabs-text")
     div(class="container-mobile")
       div(class="tabs-content")
-        h3 Задание 1. Что такое
-        p Просмотр видео
-        div(class='checkbox-block')
-          input(type="checkbox" class="checkbox-lesson" id="checkbox")
-          label(for="checkbox") Задание не выполнено
-        video(scr='' poster='images/video.jpg')
-        div(class='video-lesson')
-        p Как понять что такое хороший интерфейс? Хороший интерфейс не заставляет пользователей лишний раз думать. Он призван минимизировать затрату времени на его восприятие. Хороший интерфейс не видим. И преподносит контент на первый план. 
-        div(class='button-block')
-          button(class='button button-green') Задание выполнено
-          div(class='button-shadow')
+        include ../lesson-content/task1
   input(class="tabs-tab" type="radio" id="tabs-tab2" name="tabstab")
   label(class="tabs-title" for="tabs-tab2")
     svg(class="icon icon-Path_118")

@@ -29,6 +29,7 @@
         }
       }
       &-text {
+        background-color: #fff;
         border-top: 1px solid var(--global-muted-background);
         display: none;
         width: 100%;
@@ -38,6 +39,13 @@
         line-height: 1.43;
         video {
           width: 100%;
+        }
+        .button, .button-block {
+          @media screen and (min-width: 1024px) {
+            width: auto;
+            display: block;
+            margin-left: auto;
+          }
         }
       }
 

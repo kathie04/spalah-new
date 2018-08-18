@@ -180,7 +180,8 @@
 @table-expand-min-width:                        150px;
 
 body {
-    font-size: 16px;
+	font-size: 16px;
+	background-color: @global-muted-background;
 }
 
 .hook-form() {
@@ -228,11 +229,9 @@ body {
 .hook-button {
 	width: 100%;
 	font-weight: bold;
-}
-
-.hook-button-misc() {
-	.button-block {position: relative;}
-    .button-shadow {
+	position: relative;
+	&:after {
+		content: ' ';
 		position: absolute;
 		top: 0;
 		left: 50%;
@@ -240,7 +239,6 @@ body {
 		width: 90%;
 		height: @global-control-height;
 		box-shadow: 0 10px 30px rgba(18, 163, 72, 0.5);
-		z-index: -1;
 	}
 }
 
@@ -254,3 +252,16 @@ body {
 		h1, h2, h3, h4, h5, h6 {color: #fff}
 	}
 }
+
+.layout-education > .layout-item:first-child {
+	@media screen and (min-width: 1024px) { 
+		width: 37%;
+		margin-right: 7%;
+		}
+	}
+.layout-education > .layout-item:last-child {
+	width: 100%;
+	@media screen and (min-width: 1024px) { 
+		width: 63%;
+		}
+	}
